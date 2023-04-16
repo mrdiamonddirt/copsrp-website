@@ -1,0 +1,72 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.nav-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.mouse-flashers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  pointer-events: none;
+}
+
+.blue-light {
+  background: radial-gradient(
+    circle,
+    rgba(0,50,145,1) 32%,
+    rgba(0,10,102,0) 66%);
+  opacity: 0.1;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  border-radius: 50%;
+  animation: flash 0.5s infinite;
+  transform: translate(-40px, -40px);
+}
+
+.red-light {
+  background: radial-gradient(
+    circle,
+    rgb(145, 0, 0, 1) 32%,
+    rgba(0,10,102,0) 66%);
+  opacity: 0.1;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  border-radius: 50%;
+  animation: flash 0.5s infinite;
+  transform: translate(-40px, -40px);
+}
+
+/* keyframe */
+@keyframes flash {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
