@@ -3,11 +3,10 @@ import React from "react";
 const Home = () => {
     return (
         <div>
-        <h1>Home</h1>
+        <h1 className="font-face-due-date">Home</h1>
         <p>CopsRP is a FiveM Roleplay Community</p>
         {/* give a brief explaination of the server and the community */}
-        <p>We Are always looking to expand the community and currently</p>
-        <p>The best wasy of doing that is via Discord.</p>
+        <p>We Are always looking to expand the community and currently the best way of doing that is via Discord.</p>
         <p>Our server is based on the QBCore framework and is a Leo roleplay server.</p>
         {/* links to the discord server and the game server link */}
         <p>Discord: <a href="https://discord.gg/uu8MXcM">https://discord.gg/uu8MXcM</a></p>

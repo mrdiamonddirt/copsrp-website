@@ -5,6 +5,7 @@ import Discord from "./component/Discord";
 import Home from "./component/Home";
 import About from "./component/About";
 import Dashboard from "./component/Dashboard";
+import Logo from "./assets/logo.png";
 
 // update the position of the mouse flashers to follow the mouse
 document.addEventListener("mousemove", (e) => {
@@ -41,17 +42,18 @@ function Layout() {
     <div>
     {/* A "layout route" is a good place to put markup you want to
         share across all the pages on your site, like navigation. */}
+    <img src={Logo} alt="CopsRP Logo" className="logo smalllogo" />
     <nav className="nav-container">
-        <p>
+        <p className="font-face-due-date">
             <Link to="/">Home</Link>
         </p>
-        <p>
+        <p className="font-face-due-date">
             <Link to="/discord">Discord</Link>
         </p>
-        <p>
+        <p className="font-face-due-date">
             <Link to="/about">About</Link>
         </p>
-        <p>
+        <p className="font-face-due-date">
             <Link to="/dashboard">Dashboard</Link>
         </p>
         {/* <p>

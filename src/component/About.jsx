@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
     return (
         <div>
-        <h1>About</h1>
+        <h1 className="font-face-due-date">About</h1>
         <p>CopsRP is a FiveM Roleplay Community</p>
         {/* give a brief explaination of the server and the community */}
         <p>We Are always looking to expand the community and currently</p>

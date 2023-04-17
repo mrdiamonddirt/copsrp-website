@@ -1,7 +1,7 @@
 #root {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0;
     text-align: center;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
@@ -9,10 +9,19 @@
     user-select: none; /* Standard */
 }
 
+.smalllogo {
+  position: absolute;
+  left: 5px;
+  z-index: -10;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
 .nav-container {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
 }
@@ -26,20 +35,25 @@
   pointer-events: none;
 }
 
+hr {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 .blue-light {
   background: radial-gradient(
     circle,
     rgba(0,50,145,1) 32%,
     rgba(0,10,102,0) 66%);
   opacity: 0.1;
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 20px;
   top: 0;
   left: 0;
   z-index: 999;
   border-radius: 50%;
-  animation: flash 0.5s infinite;
-  transform: translate(-40px, -40px);
+  animation: flash1 0.5s infinite;
+  transform: translate(-70px, -10px);
 }
 
 .red-light {
@@ -48,18 +62,23 @@
     rgb(145, 0, 0, 1) 32%,
     rgba(0,10,102,0) 66%);
   opacity: 0.1;
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 20px;
   top: 0;
   left: 0;
   z-index: 999;
   border-radius: 50%;
-  animation: flash 0.5s infinite;
-  transform: translate(-40px, -40px);
+  animation: flash2 0.5s infinite;
+  transform: translate( -110px, -10px);
+}
+
+.font-face-due-date {
+  font-family: DueDate;
+  font-weight: bold;
 }
 
 /* keyframe */
-@keyframes flash {
+@keyframes flash1 {
   0% {
     opacity: 0.1;
   }
@@ -68,5 +87,17 @@
   }
   100% {
     opacity: 0.1;
+  }
+}
+
+@keyframes flash2 {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.5;
   }
 }
