@@ -45,7 +45,7 @@ function Layout() {
         share across all the pages on your site, like navigation. */}
     {/* <img src={Logo} alt="CopsRP Logo" className="logo smalllogo" /> */}
     <nav className="nav-container">
-    <h1 className="font-face-due-date">CopsRP</h1>
+    <h1 className="font-face-due-date CRPLogo" >CopsRP</h1>
         <p className="font-face-due-date">
             <Link to="/">Home</Link>
         </p>

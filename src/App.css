@@ -9,6 +9,10 @@
     user-select: none; /* Standard */
 }
 
+.CRPLogo {
+  margin: 0;
+}
+
 .smalllogo {
   position: absolute;
   left: 5px;
@@ -20,6 +24,7 @@
 
 .nav-container {
   margin-bottom: 0.5rem;
+  margin-left: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
