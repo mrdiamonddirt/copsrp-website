@@ -10,6 +10,7 @@ import Logo from "./assets/logo.png";
 // update the position of the mouse flashers to follow the mouse
 document.addEventListener("mousemove", (e) => {
     const mouseFlashers = document.querySelector(".mouse-flashers");
+    // restrict the mouse flashers to the viewport
     mouseFlashers.style.left = e.clientX + "px";
     mouseFlashers.style.top = e.clientY + "px";
 });
@@ -42,8 +43,9 @@ function Layout() {
     <div>
     {/* A "layout route" is a good place to put markup you want to
         share across all the pages on your site, like navigation. */}
-    <img src={Logo} alt="CopsRP Logo" className="logo smalllogo" />
+    {/* <img src={Logo} alt="CopsRP Logo" className="logo smalllogo" /> */}
     <nav className="nav-container">
+    <h1 className="font-face-due-date">CopsRP</h1>
         <p className="font-face-due-date">
             <Link to="/">Home</Link>
         </p>
