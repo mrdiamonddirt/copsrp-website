@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import './Dashboard.css'
+import image from '../assets/1.png'
 
 const Dashboard = () => {
 
@@ -26,7 +27,7 @@ const Dashboard = () => {
     }
 
     return (
-        <div>
+        <div style={{backgroundImage: `url(${image})`, width: "100%", height: "100vh"}}>
         <h1 className="font-face-due-date">Dashboard</h1>
         <p>The Dashboard is Currently Under Development</p>
         {/* create a console like environment */}

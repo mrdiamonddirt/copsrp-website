@@ -9,6 +9,15 @@
     user-select: none; /* Standard */
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .CRPLogo {
   margin: 0;
 }

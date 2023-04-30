@@ -46,16 +46,16 @@ function Layout() {
     {/* <img src={Logo} alt="CopsRP Logo" className="logo smalllogo" /> */}
     <nav className="nav-container">
     <h1 className="font-face-due-date CRPLogo" >CopsRP</h1>
-        <p className="font-face-due-date">
+        <p className="font-face-due-date Link">
             <Link to="/">Home</Link>
         </p>
-        <p className="font-face-due-date">
+        <p className="font-face-due-date Link">
             <Link to="/discord">Discord</Link>
         </p>
-        <p className="font-face-due-date">
+        <p className="font-face-due-date Link">
             <Link to="/about">About</Link>
         </p>
-        <p className="font-face-due-date">
+        <p className="font-face-due-date Link">
             <Link to="/dashboard">Dashboard</Link>
         </p>
         {/* <p>
